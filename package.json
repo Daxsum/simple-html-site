@@ -1,26 +1,37 @@
 {
-  "name": "simple-html-site",
+  "name": "search-suggestions",
   "version": "1.0.0",
-  "description": "",
-  "engines": {
-    "node": "22"
-  },
+  "description": "Search suggestions implementation",
+  "source": "index.html",
   "scripts": {
-    "dev": "concurrently \"sass --watch style.scss ./build/style.css\" \"tsc --watch\" \"serve\""
+    "start": "ts-node node/index.ts",
+    "dev": "nodemon node/index.ts",
+    "frontend": "parcel index.html",
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.21.2"
+    "axios": "^1.6.7",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "jest-environment-jsdom": "^29.7.0"
   },
   "devDependencies": {
-    "@types/express": "^5.0.0",
-    "concurrently": "^7.0.0",
-    "nodemon": "^2.0.16",
-    "sass": "^1.49.9",
-    "serve": "^14.2.4",
-    "tsx": "^4.19.2",
-    "typescript": "^5.0.0"
+    "@parcel/transformer-sass": "^2.13.3",
+    "@testing-library/jest-dom": "^6.4.2",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.11.19",
+    "@types/supertest": "^6.0.2",
+    "jest": "^29.7.0",
+    "nodemon": "^3.0.3",
+    "parcel": "^2.11.0",
+    "supertest": "^6.3.4",
+    "ts-jest": "^29.1.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
   }
 }

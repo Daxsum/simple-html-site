@@ -1,3 +1,32 @@
-node_modules
-build
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+build/
+
+# Parcel cache
+.parcel-cache/
+.cache/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Test coverage
+coverage/
+
 *.js.map
